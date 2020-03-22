@@ -1,2 +1,2 @@
 # E-Commerce
- ## this project is an advanced e-commerce website. **Identity, **admin panel, **Cart and **Order transactions are available. The design is manual.
+## This project is an advanced e-commerce website. Identity, Admin Panel, Cart and Order transactions are available. The design is manual.
