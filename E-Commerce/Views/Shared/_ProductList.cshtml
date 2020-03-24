@@ -1,0 +1,32 @@
+﻿@using E_Commerce.Models;
+@model IEnumerable<ProductModel>
+
+<div class="row">
+
+    @foreach (var urun in Model)
+    {
+        <div class="col-md-4">
+            <div class="card-deck">
+                <div class="card">
+                    <img src="~/Upload/@urun.Image" class="card-img-top" alt="@urun.Name">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="/Home/Details/@urun.Id">@urun.Name</a>
+                        </h5>
+                        <p class="card-text">@urun.Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted product-price">
+                            <i class=" fa fa-try" aria-hidden="true"></i>
+                            ₺ @urun.Price 
+                        </small>
+                    <a href="/Home/Details/@urun.Id" class="btn btn-default btn-sm float-right">Ürünü incele</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>
+
